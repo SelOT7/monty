@@ -1,4 +1,7 @@
 #include "monty.h"
+#define _GNU_SOURCE
+#include <stdio.h>
+
 bus_t bus = {NULL, NULL, NULL, 0};
 /**
  * main - monty code interpreter
@@ -41,4 +44,5 @@ int main(int argc, char *argv[])
 	}
 	free_stack(stack);
 	fclose(file);
-return (0);}
+	return (0);
+}
